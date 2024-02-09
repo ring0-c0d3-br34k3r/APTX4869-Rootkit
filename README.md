@@ -2,6 +2,10 @@
 APTX4869 Rootkit is a Kernel Mode Rootkit
 
 
+![APTXxxxx](https://github.com/0xp17j8/APTX4869-Rootkit-/assets/111459558/d72eddf8-f4d2-4a21-845b-e1272ed1b3f5)
+
+
+
 The code focuses on a specific process (OrcaMal.exe). It aims to hide or manipulate information related to this particular process when queried by system functions
 
 "hiding the presence of a malware process from system monitoring tools. It demonstrates techniques for manipulating system calls in kernel mode"
