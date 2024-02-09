@@ -18,32 +18,44 @@ This report presents an analysis of the "APTX4869 Rootkit" malware, a sophistica
 - Technical Overview :
   
   Language        : C++
+  
   Target Platform : Windows
 
 
 - Main Components :
   
   Function Hooks         : Overrides system functions such as ZwQuerySystemInformation to control information retrieval and hide malicious processes.
+
   Memory Manipulation    : Utilizes WriteProcessMemory and ReadProcessMemory for stealth and persistence.
+
   Rootkit Entry          : Initializes the rootkit by hooking system functions and establishing malicious behaviors.
+
   Malicious Capabilities :
+
   Process Hiding         : Conceals specific processes from system queries, making them invisible to monitoring tools and security software.
+
   Persistence            : Maintains control over system functions even after system reboots, ensuring long-term presence and activity.
+
   Remote Access          : Provides a backdoor for remote attackers to control the infected system, execute commands, and exfiltrate data.
+
   Evasion Techniques     : Utilizes advanced memory manipulation techniques to evade detection by antivirus software and other security mechanisms.
  
 
 - Detailed Analysis :
   
   Function Hooks         : Overrides ZwQuerySystemInformation to manipulate system information retrieval, selectively hiding processes based on predefined criteria.
+
   Memory Manipulation    : Utilizes WriteProcessMemory and ReadProcessMemory to modify memory contents, facilitating stealth and persistence.
+
   Process Concealment    : Specifically targets processes associated with security tools, administrative tasks, or user activity, aiming to avoid detection and interference.
+
   Driver Initialization  : Hooks system functions during driver initialization, ensuring early control and integration into the system's core functionality.
 
 
 - Impact :
   
   Security Threat          : Poses a significant threat to system security and integrity by allowing unauthorized access and control over infected systems.
+
   Data Breach              : Enables attackers to access and exfiltrate sensitive data, compromising the confidentiality and privacy of users and organizations.
 
 
