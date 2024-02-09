@@ -1,5 +1,3 @@
-//Telegram : https://t.me/I0xp17j8
-
 #include "APTX4869.h"
 #include "pch.h"
 
